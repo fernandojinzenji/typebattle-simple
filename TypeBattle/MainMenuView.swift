@@ -247,7 +247,7 @@ class MainMenuView: UIView, BGSceneDelegate {
         let lobby    = gameManager.createGameLobby(name: "TRAINING", keyword: category, maxCapacity: 1, location: nil, owner: self.currentPlayer)
 
         // Create session
-        self.gameSession = self.gameManager.createGameSession(lobby: lobby, someRandomText: NetworkManager.getHardcodedText(category: category), persistInFirebase: false)
+        self.gameSession = self.gameManager.createGameSession(lobby: lobby, someRandomText: "just type the correct letter faster than your opponents. it is that simple!", persistInFirebase: false)
         
         let characterArray = self.gameManager.getAllCharacters()
         let randomCharacterIndex = Int(arc4random_uniform(8))

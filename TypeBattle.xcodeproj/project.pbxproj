@@ -46,7 +46,7 @@
 		9C34E2D41F18B31F008372DC /* RoomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C34E2D31F18B31F008372DC /* RoomTableViewCell.swift */; };
 		9C39A5961F1C900F000D3252 /* PlayerInLobbyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C39A5951F1C900F000D3252 /* PlayerInLobbyTableViewCell.swift */; };
 		9C6BC2BD215F3CD600705660 /* GameText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6BC2BC215F3CD600705660 /* GameText.swift */; };
-		9C6BC2BF215F3F5800705660 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9C6BC2BE215F3F5800705660 /* GoogleService-Info.plist */; };
+		9C6BC2C1215F46A300705660 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9C6BC2C0215F46A300705660 /* GoogleService-Info.plist */; };
 		9C9808711F2482680080B77B /* Credits.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C9808701F2482680080B77B /* Credits.storyboard */; };
 		9C9808731F2482AF0080B77B /* CreditsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9808721F2482AF0080B77B /* CreditsViewController.swift */; };
 		9C9DE0251F1E92DD006B6FEE /* SimGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9DE0241F1E92DD006B6FEE /* SimGameViewController.swift */; };
@@ -111,7 +111,7 @@
 		9C34E2D31F18B31F008372DC /* RoomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomTableViewCell.swift; sourceTree = "<group>"; };
 		9C39A5951F1C900F000D3252 /* PlayerInLobbyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerInLobbyTableViewCell.swift; sourceTree = "<group>"; };
 		9C6BC2BC215F3CD600705660 /* GameText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameText.swift; sourceTree = "<group>"; };
-		9C6BC2BE215F3F5800705660 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9C6BC2C0215F46A300705660 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9C9808701F2482680080B77B /* Credits.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Credits.storyboard; sourceTree = "<group>"; };
 		9C9808721F2482AF0080B77B /* CreditsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditsViewController.swift; sourceTree = "<group>"; };
 		9C9DE0241F1E92DD006B6FEE /* SimGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimGameViewController.swift; sourceTree = "<group>"; };
@@ -286,7 +286,7 @@
 				438DC95F1F180476005699C3 /* MainMenuView.swift */,
 				431E7F351F181F9900B7B5CE /* MainMenuButton.swift */,
 				431E7F371F18220C00B7B5CE /* GameLabel.swift */,
-				9C6BC2BE215F3F5800705660 /* GoogleService-Info.plist */,
+				9C6BC2C0215F46A300705660 /* GoogleService-Info.plist */,
 				438DC9631F180600005699C3 /* MainMenu.storyboard */,
 				43D9BBCD1F1B51FC00B0B4AC /* LeaderboardView.swift */,
 				439F8B471F225A5D008C7DC5 /* MainMenuViewController.swift */,
@@ -430,7 +430,7 @@
 				FF889A161F169C3E006955BB /* Assets.xcassets in Resources */,
 				43193A711F22A6E400DBF720 /* origami-mommy.regular.ttf in Resources */,
 				436D738D1F21902900CA301A /* Settings.storyboard in Resources */,
-				9C6BC2BF215F3F5800705660 /* GoogleService-Info.plist in Resources */,
+				9C6BC2C1215F46A300705660 /* GoogleService-Info.plist in Resources */,
 				43D9BBCC1F1B51E100B0B4AC /* Leaderboard.storyboard in Resources */,
 				9C9808711F2482680080B77B /* Credits.storyboard in Resources */,
 				FFAF90AA1F25878200F73C8C /* Wraith-Arc-Blocks.otf in Resources */,
