@@ -45,6 +45,8 @@
 		9C34E2D21F184F64008372DC /* JoinRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C34E2D11F184F64008372DC /* JoinRoomViewController.swift */; };
 		9C34E2D41F18B31F008372DC /* RoomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C34E2D31F18B31F008372DC /* RoomTableViewCell.swift */; };
 		9C39A5961F1C900F000D3252 /* PlayerInLobbyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C39A5951F1C900F000D3252 /* PlayerInLobbyTableViewCell.swift */; };
+		9C6BC2BD215F3CD600705660 /* GameText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6BC2BC215F3CD600705660 /* GameText.swift */; };
+		9C6BC2BF215F3F5800705660 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9C6BC2BE215F3F5800705660 /* GoogleService-Info.plist */; };
 		9C9808711F2482680080B77B /* Credits.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C9808701F2482680080B77B /* Credits.storyboard */; };
 		9C9808731F2482AF0080B77B /* CreditsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9808721F2482AF0080B77B /* CreditsViewController.swift */; };
 		9C9DE0251F1E92DD006B6FEE /* SimGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9DE0241F1E92DD006B6FEE /* SimGameViewController.swift */; };
@@ -60,7 +62,6 @@
 		FF889A231F16AFF6006955BB /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF889A221F16AFF6006955BB /* Player.swift */; };
 		FF889A261F16BB94006955BB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF889A251F16BB94006955BB /* LoginViewController.swift */; };
 		FF889A281F16BBA9006955BB /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF889A271F16BBA9006955BB /* Login.storyboard */; };
-		FF889A351F16E779006955BB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FF889A341F16E779006955BB /* GoogleService-Info.plist */; };
 		FF889A3D1F18422E006955BB /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF889A3C1F18422E006955BB /* RegisterViewController.swift */; };
 		FF889A3F1F18423C006955BB /* RegisterScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF889A3E1F18423C006955BB /* RegisterScreen.storyboard */; };
 		FF889A431F1861A2006955BB /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF889A421F1861A2006955BB /* NetworkManager.swift */; };
@@ -109,6 +110,8 @@
 		9C34E2D11F184F64008372DC /* JoinRoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinRoomViewController.swift; sourceTree = "<group>"; };
 		9C34E2D31F18B31F008372DC /* RoomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomTableViewCell.swift; sourceTree = "<group>"; };
 		9C39A5951F1C900F000D3252 /* PlayerInLobbyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerInLobbyTableViewCell.swift; sourceTree = "<group>"; };
+		9C6BC2BC215F3CD600705660 /* GameText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameText.swift; sourceTree = "<group>"; };
+		9C6BC2BE215F3F5800705660 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9C9808701F2482680080B77B /* Credits.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Credits.storyboard; sourceTree = "<group>"; };
 		9C9808721F2482AF0080B77B /* CreditsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreditsViewController.swift; sourceTree = "<group>"; };
 		9C9DE0241F1E92DD006B6FEE /* SimGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimGameViewController.swift; sourceTree = "<group>"; };
@@ -127,7 +130,6 @@
 		FF889A221F16AFF6006955BB /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		FF889A251F16BB94006955BB /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FF889A271F16BBA9006955BB /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
-		FF889A341F16E779006955BB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FF889A3A1F180836006955BB /* TypeBattle.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TypeBattle.entitlements; sourceTree = "<group>"; };
 		FF889A3C1F18422E006955BB /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		FF889A3E1F18423C006955BB /* RegisterScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RegisterScreen.storyboard; sourceTree = "<group>"; };
@@ -281,10 +283,10 @@
 				9C34E2CC1F184F04008372DC /* Multiplayer */,
 				FF889A171F169C3E006955BB /* LaunchScreen.storyboard */,
 				FF889A1A1F169C3E006955BB /* Info.plist */,
-				FF889A341F16E779006955BB /* GoogleService-Info.plist */,
 				438DC95F1F180476005699C3 /* MainMenuView.swift */,
 				431E7F351F181F9900B7B5CE /* MainMenuButton.swift */,
 				431E7F371F18220C00B7B5CE /* GameLabel.swift */,
+				9C6BC2BE215F3F5800705660 /* GoogleService-Info.plist */,
 				438DC9631F180600005699C3 /* MainMenu.storyboard */,
 				43D9BBCD1F1B51FC00B0B4AC /* LeaderboardView.swift */,
 				439F8B471F225A5D008C7DC5 /* MainMenuViewController.swift */,
@@ -321,6 +323,7 @@
 			isa = PBXGroup;
 			children = (
 				FF889A221F16AFF6006955BB /* Player.swift */,
+				9C6BC2BC215F3CD600705660 /* GameText.swift */,
 				9C34E2BD1F173E00008372DC /* GameLobby.swift */,
 				9C34E2BF1F173E07008372DC /* GameSession.swift */,
 				9C34E2C51F1746D5008372DC /* PlayerSession.swift */,
@@ -383,6 +386,7 @@
 					FF889A041F169C3E006955BB = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 56EET8Q46G;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Keychain = {
@@ -419,7 +423,6 @@
 				FF889A141F169C3E006955BB /* Main.storyboard in Resources */,
 				9C34E2CB1F184EE6008372DC /* Multiplayer.storyboard in Resources */,
 				4340E60A1F17F862003C0167 /* Supersonic Rocketship.ttf in Resources */,
-				FF889A351F16E779006955BB /* GoogleService-Info.plist in Resources */,
 				FF7B2D8E1F217B750064B63E /* bgmusic.mp3 in Resources */,
 				FFAF90AC1F25878700F73C8C /* CIRCLED_.TTF in Resources */,
 				438DC9641F180600005699C3 /* MainMenu.storyboard in Resources */,
@@ -427,6 +430,7 @@
 				FF889A161F169C3E006955BB /* Assets.xcassets in Resources */,
 				43193A711F22A6E400DBF720 /* origami-mommy.regular.ttf in Resources */,
 				436D738D1F21902900CA301A /* Settings.storyboard in Resources */,
+				9C6BC2BF215F3F5800705660 /* GoogleService-Info.plist in Resources */,
 				43D9BBCC1F1B51E100B0B4AC /* Leaderboard.storyboard in Resources */,
 				9C9808711F2482680080B77B /* Credits.storyboard in Resources */,
 				FFAF90AA1F25878200F73C8C /* Wraith-Arc-Blocks.otf in Resources */,
@@ -509,6 +513,7 @@
 				9C34E2D21F184F64008372DC /* JoinRoomViewController.swift in Sources */,
 				431E7F361F181F9900B7B5CE /* MainMenuButton.swift in Sources */,
 				9C34E2C61F1746D5008372DC /* PlayerSession.swift in Sources */,
+				9C6BC2BD215F3CD600705660 /* GameText.swift in Sources */,
 				FF889A231F16AFF6006955BB /* Player.swift in Sources */,
 				431978DC1F242FB800E0EC32 /* UIWindow+TransitionFix.swift in Sources */,
 				436D738F1F21903800CA301A /* SettingsView.swift in Sources */,
@@ -693,7 +698,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fernandojinzenji.Type-Battle";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -714,7 +720,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fernandojinzenji.Type-Battle";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

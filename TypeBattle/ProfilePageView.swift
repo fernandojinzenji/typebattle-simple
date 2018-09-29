@@ -82,7 +82,7 @@ class ProfilePageView: UIView, BGSceneDelegate {
     
     private lazy var topHorizontalStack:UIStackView = {
         let sv = UIStackView()
-        sv.alignment = UIStackViewAlignment.fill
+        sv.alignment = UIStackView.Alignment.fill
         sv.translatesAutoresizingMaskIntoConstraints = false
 //        sv.isLayoutMarginsRelativeArrangement = true
 //        sv.layoutMargins = UIEdgeInsets(top: 8, left: 8, bottom: 8, right: 8)
@@ -93,7 +93,7 @@ class ProfilePageView: UIView, BGSceneDelegate {
     
     private lazy var upperVerticalStack:UIStackView = {
         let sv = UIStackView()
-        sv.alignment = UIStackViewAlignment.fill
+        sv.alignment = UIStackView.Alignment.fill
         sv.translatesAutoresizingMaskIntoConstraints = false
         sv.isLayoutMarginsRelativeArrangement = true
         sv.layoutMargins = UIEdgeInsets(top: 8, left: 8, bottom: 8, right: 8)
@@ -104,7 +104,7 @@ class ProfilePageView: UIView, BGSceneDelegate {
     
     private lazy var mainVerticalStack:UIStackView = {
         let sv = UIStackView()
-        sv.alignment = UIStackViewAlignment.fill
+        sv.alignment = UIStackView.Alignment.fill
         sv.translatesAutoresizingMaskIntoConstraints = false
         sv.isLayoutMarginsRelativeArrangement = true
         sv.layoutMargins = UIEdgeInsets(top: 8, left: 8, bottom: 8, right: 8)
@@ -125,7 +125,7 @@ class ProfilePageView: UIView, BGSceneDelegate {
     private lazy var bottomHorizontalStack:UIStackView = {
         let sv = UIStackView()
         sv.distribution = .fillEqually
-        sv.alignment = UIStackViewAlignment.fill
+        sv.alignment = UIStackView.Alignment.fill
         sv.translatesAutoresizingMaskIntoConstraints = false
         sv.isLayoutMarginsRelativeArrangement = true
         sv.layoutMargins = UIEdgeInsets(top: 8, left: 8, bottom: 8, right: 8)
@@ -196,21 +196,21 @@ class ProfilePageView: UIView, BGSceneDelegate {
         let window     = UIApplication.shared.windows[0] as UIWindow
         
         let transition      = CATransition()
-        transition.subtype  = kCATransitionFade
+        transition.type  = CATransitionType.fade
         transition.duration = 0.5
         
         window.set(rootViewController: vc!, withTransition: transition)
     
     }
     
-    func backToMainMenu(sender:UIButton!) {
+    @objc func backToMainMenu(sender:UIButton!) {
         // Play sound
         MusicHelper.sharedHelper.playButtonSound()
         
         NotificationCenter.default.post(name: NSNotification.Name(rawValue: "startAnimation"), object: nil)
     }
     
-    func signout(sender:UIButton!) {
+    @objc func signout(sender:UIButton!) {
         MusicHelper.sharedHelper.playButtonSound()
         
         let alertController = UIAlertController(title: "Confirmation", message: "Do you really want to sign out?", preferredStyle: .alert)
@@ -222,7 +222,7 @@ class ProfilePageView: UIView, BGSceneDelegate {
             let window     = UIApplication.shared.windows[0] as UIWindow
             
             let transition      = CATransition()
-            transition.subtype  = kCATransitionFade
+            transition.type = CATransitionType.fade
             transition.duration = 0.5
             
             window.set(rootViewController: vc!, withTransition: transition)

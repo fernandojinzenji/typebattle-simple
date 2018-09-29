@@ -141,7 +141,7 @@ class GameOverViewController: UIViewController, UITableViewDelegate, UITableView
         let window = UIApplication.shared.windows[0] as UIWindow
         
         let transition      = CATransition()
-        transition.subtype  = kCATransitionFade
+        transition.type  = CATransitionType.fade
         transition.duration = 0.5
         
         window.set(rootViewController: vc!, withTransition: transition)

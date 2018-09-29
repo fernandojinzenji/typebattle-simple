@@ -36,7 +36,7 @@ class MainMenuView: UIView, BGSceneDelegate {
     
     private lazy var stack:UIStackView = {
         let sv = UIStackView()
-        sv.alignment = UIStackViewAlignment.fill
+        sv.alignment = UIStackView.Alignment.fill
         sv.translatesAutoresizingMaskIntoConstraints = false
         sv.isLayoutMarginsRelativeArrangement = true
         sv.layoutMargins = UIEdgeInsets(top: 8, left: 8, bottom: 8, right: 8)
@@ -152,31 +152,31 @@ class MainMenuView: UIView, BGSceneDelegate {
     }
 
     
-    func spButtonTapped(sender: UIButton) {
+    @objc func spButtonTapped(sender: UIButton) {
         MusicHelper.sharedHelper.playButtonSound()
         buttonTag = 1
         NotificationCenter.default.post(name: NSNotification.Name(rawValue: "startAnimation"), object: nil)
     }
     
-    func lbButtonTapped(sender: UIButton) {
+    @objc func lbButtonTapped(sender: UIButton) {
         MusicHelper.sharedHelper.playButtonSound()
         buttonTag = 5
         NotificationCenter.default.post(name: NSNotification.Name(rawValue: "startAnimation"), object: nil)
     }
     
-    func mpButtonTapped(sender: UIButton) {
+    @objc func mpButtonTapped(sender: UIButton) {
         MusicHelper.sharedHelper.playButtonSound()
         buttonTag = 2
         NotificationCenter.default.post(name: NSNotification.Name(rawValue: "startAnimation"), object: nil)
     }
     
-    func settingsButtonTapped(sender: UIButton) {
+    @objc func settingsButtonTapped(sender: UIButton) {
         MusicHelper.sharedHelper.playButtonSound()
         buttonTag = 3
         NotificationCenter.default.post(name: NSNotification.Name(rawValue: "startAnimation"), object: nil)
     }
     
-    func profileButtonTapped(sender: UIButton) {
+    @objc func profileButtonTapped(sender: UIButton) {
         MusicHelper.sharedHelper.playButtonSound()
         buttonTag = 4
         NotificationCenter.default.post(name: NSNotification.Name(rawValue: "startAnimation"), object: nil)
@@ -263,7 +263,7 @@ class MainMenuView: UIView, BGSceneDelegate {
         let window     = UIApplication.shared.windows[0] as UIWindow
         
         let transition      = CATransition()
-        transition.subtype  = kCATransitionFade
+        transition.type  = CATransitionType.fade
         transition.duration = 0.5
         
         window.set(rootViewController: vc!, withTransition: transition)
@@ -275,7 +275,7 @@ class MainMenuView: UIView, BGSceneDelegate {
         let window     = UIApplication.shared.windows[0] as UIWindow
         
         let transition      = CATransition()
-        transition.subtype  = kCATransitionFade
+        transition.type  = CATransitionType.fade
         transition.duration = 0.5
         
         window.set(rootViewController: vc!, withTransition: transition)
@@ -288,7 +288,7 @@ class MainMenuView: UIView, BGSceneDelegate {
         
         
         let transition      = CATransition()
-        transition.subtype  = kCATransitionFade
+        transition.type  = CATransitionType.fade
         transition.duration = 0.5
         
         window.set(rootViewController: vc!, withTransition: transition)
@@ -300,7 +300,7 @@ class MainMenuView: UIView, BGSceneDelegate {
         let window     = UIApplication.shared.windows[0] as UIWindow
        
         let transition      = CATransition()
-        transition.subtype  = kCATransitionFade
+        transition.type  = CATransitionType.fade
         transition.duration = 0.5
         
         window.set(rootViewController: vc!, withTransition: transition)

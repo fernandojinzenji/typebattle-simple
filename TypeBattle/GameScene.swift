@@ -237,11 +237,11 @@ class GameScene: SKScene {
     
     //Detect user entered text
     func detectKeystroke() {
-        NotificationCenter.default.addObserver(self, selector: #selector(checkUserText(sender:)), name: NSNotification.Name.UITextFieldTextDidChange, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(checkUserText(sender:)), name: UITextField.textDidChangeNotification, object: nil)
     }
     
     //Check user entered text with game text
-    func checkUserText(sender: Notification) {
+    @objc func checkUserText(sender: Notification) {
         let textField = sender.object as! UITextField
         let lowerText = textField.text?.lowercased()
         textField.text = ""

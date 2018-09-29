@@ -122,14 +122,14 @@ class LeaderboardView: UIView, UITableViewDelegate, UITableViewDataSource, BGSce
         let window     = UIApplication.shared.windows[0] as UIWindow
         
         let transition      = CATransition()
-        transition.subtype  = kCATransitionFade
+        transition.type  = CATransitionType.fade
         transition.duration = 0.5
         
         window.set(rootViewController: vc!, withTransition: transition)
         
     }
     
-    func backToMainMenu(sender:UIButton!) {
+    @objc func backToMainMenu(sender:UIButton!) {
         // Play sound
         MusicHelper.sharedHelper.playButtonSound()
         

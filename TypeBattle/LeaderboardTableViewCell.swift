@@ -44,7 +44,7 @@ class LeaderboardTableViewCell: UITableViewCell {
     
     private lazy var mainHorizontalStack:UIStackView = {
         let sv = UIStackView()
-        sv.alignment = UIStackViewAlignment.fill
+        sv.alignment = UIStackView.Alignment.fill
         sv.translatesAutoresizingMaskIntoConstraints = false
         sv.isLayoutMarginsRelativeArrangement = true
         sv.layoutMargins = UIEdgeInsets(top: 0, left: 8, bottom: 0, right: 0)
@@ -55,7 +55,7 @@ class LeaderboardTableViewCell: UITableViewCell {
     
     private lazy var mainVerticalStack:UIStackView = {
         let sv = UIStackView()
-        sv.alignment = UIStackViewAlignment.fill
+        sv.alignment = UIStackView.Alignment.fill
         sv.translatesAutoresizingMaskIntoConstraints = false
         sv.isLayoutMarginsRelativeArrangement = true
         sv.layoutMargins = UIEdgeInsets(top: 8, left: 8, bottom: 8, right: 8)
@@ -68,7 +68,7 @@ class LeaderboardTableViewCell: UITableViewCell {
         fatalError("init(coder:)")
     }
     
-    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         self.contentView.addSubview(mainHorizontalStack)
         self.mainHorizontalStack.addArrangedSubview(rankingLabel)

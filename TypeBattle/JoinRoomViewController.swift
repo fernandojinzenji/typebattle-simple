@@ -88,7 +88,7 @@ class JoinRoomViewController: UIViewController, UITableViewDelegate, UITableView
             let ellipsis = self.waitingForPlayerLabel.text?.replacingOccurrences(of: "Waiting for players", with: "", options: String.CompareOptions.caseInsensitive, range: nil)
 
             var newEllipsis = ""
-            for _ in 0 ... (ellipsis!.characters.count % 3) {
+            for _ in 0 ... (ellipsis!.count % 3) {
                 newEllipsis += "."
             }
                 
@@ -107,7 +107,7 @@ class JoinRoomViewController: UIViewController, UITableViewDelegate, UITableView
                 else {
                     print("This room no longer exists.")
                     DispatchQueue.main.async(execute: {
-                        let alert = UIAlertController(title: "Room does not exists", message: "The creator of this room left the game. Please join another room.", preferredStyle: UIAlertControllerStyle.alert)
+                        let alert = UIAlertController(title: "Room does not exists", message: "The creator of this room left the game. Please join another room.", preferredStyle: UIAlertController.Style.alert)
                         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { (action) in
                             self.GoToMainLobby()
                         }))

@@ -22,7 +22,7 @@ class NetworkManager{
             if error == nil {
                 Auth.auth().signIn(withEmail: email, password: password, completion: { (user, error) in
                     if error == nil {
-                        guard let user = user else {return}
+//                        guard let user = user else {return}
                         
                         let newPlayer = Player(name: nickname, playerID: "abc",avatarName: avatarName)
                         let playerRef = ref.child("abc")
@@ -226,12 +226,12 @@ class NetworkManager{
         // poem
         if category.lowercased() == "poem" {
             
-            return "this is a poem"
+            return GameText().getRandomPoem()
             
         }
         else { // quote
             
-            return "this is a quote"
+            return GameText().getRandomQuote()
             
         }
         
