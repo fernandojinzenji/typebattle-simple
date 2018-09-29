@@ -4,6 +4,7 @@ IMPORTANT: This is a simplified version of the initial project. What was removed
 - Vapor backend, responsible to sort random quotes/poems (due to maintenance costs);
 - User registration/authentication not required (avoid GDPR issues)
 - Incorrect constraints that were not using safe area (notch!!!)
+
 Original repo: https://github.com/jimmyhoang/TypeBattle
 
 ## Introduction
